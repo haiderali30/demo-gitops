@@ -5,8 +5,11 @@ metadata:
   labels:
     app: demo
 spec:
+  # NodePort so the page stays reachable at http://<minikube-ip>:30081 through rollouts
+  type: NodePort
   selector:
     app: demo
   ports:
     - port: 80
       targetPort: 8080
+      nodePort: 30081
