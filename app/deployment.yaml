@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/haiderali30/demo:initial
+          image: ghcr.io/haiderali30/demo:78fc4cd
           ports:
             - containerPort: 8080
           readinessProbe:
