@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: docker.io/hayderrr/demo:f3fc5f6
+          image: docker.io/hayderrr/demo:14583fc
           ports:
             - containerPort: 8080
           readinessProbe:
